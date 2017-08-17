@@ -7,6 +7,7 @@ include: "*.view"
 include: "*.dashboard"
 
 explore: cpu_usage {
+  label: "EC2 Instances"
   view_label: "instances"
   join: instances {
     view_label: "instances"
