@@ -6,12 +6,11 @@ include: "*.view"
 # include all the dashboards
 include: "*.dashboard"
 
-explore: ec2_instances {
-  from: cpu_usage
+explore: cpu_usage {
   view_label: "instances"
   join: instances {
     view_label: "instances"
-    sql_on: ${ec2_instances.instance_id} = ${instances.id} ;;
+    sql_on: ${cpu_usage.instance_id} = ${instances.id} ;;
     relationship: many_to_one
   }
 
