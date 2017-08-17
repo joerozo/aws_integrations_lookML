@@ -1,6 +1,5 @@
 view: cpu_usage {
   sql_table_name: cloudwatchdata.cpu_usage ;;
-  suggestions: no
 
   dimension: id {
     primary_key: yes
@@ -17,6 +16,7 @@ view: cpu_usage {
   dimension: data_type {
     type: string
     sql: ${TABLE}.data_type ;;
+    hidden: yes
   }
 
   dimension: instance_id {
@@ -29,6 +29,7 @@ view: cpu_usage {
     type: time
     timeframes: [year, month, date, time]
     sql: ${TABLE}."time" ;;
+    hidden: yes
   }
 
   dimension: type {
