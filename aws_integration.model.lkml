@@ -57,3 +57,5 @@ explore: cpu_usage {
     relationship: one_to_many
   }
 }
+
+explore: digitalocean_cpu {}
