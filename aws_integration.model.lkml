@@ -4,7 +4,7 @@ connection: "athena_db_j"
 include: "*.view"
 
 # include all the dashboards
-include: "*.dashboard"
+# include: "*.dashboard"
 
 explore: cpu_usage {
   label: "EC2 Instances"
