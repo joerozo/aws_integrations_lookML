@@ -59,3 +59,9 @@ explore: cpu_usage {
 }
 
 explore: digitalocean_cpu {}
+
+explore: iot_updates_fields {
+
+  label: "Inboard IoT"
+  view_label: "inboard"
+}
